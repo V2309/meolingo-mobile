@@ -177,11 +177,25 @@ export default function LearnScreen() {
                         params: { id: lesson.id }
                       });
                     } else if (lesson.type === "video-ai-teacher") {
-                      router.push("/(tabs)/ai-teacher");
+                      router.push({
+                        pathname: "/lesson/video",
+                        params: { id: lesson.id }
+                      });
                     } else if (lesson.type === "chat-ai-tutor") {
-                      router.push("/(tabs)/chat");
+                      router.push({
+                        pathname: "/lesson/chat",
+                        params: { id: lesson.id }
+                      });
+                    } else if (lesson.type === "vocabulary-review") {
+                      router.push({
+                        pathname: "/lesson/vocab",
+                        params: { id: lesson.id }
+                      });
                     } else {
-                      router.push("/(tabs)/ai-teacher");
+                      router.push({
+                        pathname: "/lesson/audio",
+                        params: { id: lesson.id }
+                      });
                     }
                   }}
                   className={`p-5 rounded-[24px] border ${

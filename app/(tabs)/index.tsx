@@ -132,7 +132,7 @@ export default function HomeScreen() {
         {/* Section: Today's Plan */}
         <View className="flex-row items-center justify-between mb-4">
           <Text className="font-poppins-bold text-[18px] text-text-primary">
-            Today's plan
+            Today&apos;s plan
           </Text>
           <Pressable onPress={() => handleContinueLearning("todays_plan")}>
             <Text className="font-poppins-semibold text-[14px] text-lingua-purple">

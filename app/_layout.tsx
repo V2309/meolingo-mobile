@@ -108,6 +108,9 @@ function InitialLayout() {
     <Stack>
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       <Stack.Screen name="lesson/audio" options={{ headerShown: false }} />
+      <Stack.Screen name="lesson/video" options={{ headerShown: false }} />
+      <Stack.Screen name="lesson/chat" options={{ headerShown: false }} />
+      <Stack.Screen name="lesson/vocab" options={{ headerShown: false }} />
       <Stack.Screen name="onboarding" options={{ headerShown: false }} />
       <Stack.Screen name="choose-language" options={{ headerShown: false }} />
       <Stack.Screen name="(auth)" options={{ headerShown: false }} />
